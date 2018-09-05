@@ -5,7 +5,7 @@
 o false si vale otra cosa."
 
 (defn mapa-key-nula [mapa key]
-  (println (mapa key))
+  "(println (mapa key))"
   (if (= (mapa key) nil) true false)
 )
 
