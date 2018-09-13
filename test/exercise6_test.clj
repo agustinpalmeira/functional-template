@@ -2,10 +2,19 @@
   (:require [clojure.test :refer :all]
             [exercise6 :refer :all]))
 
-(deftest faverage-for-list-of-numbers
-  (testing "Returns the average of a list of numbers."
-    (is (= (faverage '(1 2 3 4 5 6)) (/ 7 2)))))
+(deftest test-array
+  (testing "Test: Last number of a vector."
+    (is (= (ultimo [1 2 3 4 5]) 5))))
 
-(deftest faverage-for-vector-of-nmbers
-  (testing "Returns the average of a vector of numbers."
-    (is (= (faverage [1 2 3 4 5 6]) (/ 7 2)))))    
+(deftest test-list
+  (testing "Test: Last number of a list."
+    (is (= (ultimo '(5 4 3)) 3))))
+
+(deftest test-chars-array
+  (testing "Test: Last number of a list of chars."
+    (is (= (ultimo ["b" "c" "d"]) "d"))))
+
+    ;Tests
+    ;(ultimo [1 2 3 4 5]) => 5
+    ;(ultimo '(5 4 3)) => 3
+    ;(ultimo ["b" "c" "d"]) => "d"
