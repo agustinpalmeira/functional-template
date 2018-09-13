@@ -1,9 +1,9 @@
 (ns exercise8)
 
 "Ejercicio 8."
-"Escribir una funcion (separador) que ddivida un array de elementos a partir de la posicion dada."
+"Escribir una funcion (separador) que divida un array de elementos a partir de la posicion dada."
 
-(defn enesimo [pos seq]
+(defn separador [pos seq]
 	(split-at pos seq)
 )
 
